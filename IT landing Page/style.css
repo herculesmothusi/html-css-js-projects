@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica;
+}
+
+:root {
+    --btn-color: green;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* body styles */
+
+
+/* body {
+    margin-top: 70px;
+} */
+
+
+/* header styles */
+
+header {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background-color: white;
+}
+
+.logo {
+    width: 30%;
+}
+
+.icon {
+    font-size: 1.4rem;
+}
+
+.icon h1 span {
+    color: green;
+}
+
+header nav {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    margin-left: 10px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 15px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+header nav ul li a:hover {
+    color: green;
+    text-decoration: 1.3px green underline;
+    text-underline-offset: 8px;
+    transition: 0.4s ease-in-out all;
+}
+
+header input,
+button {
+    padding: 10px;
+    border-color: #4caf4f25;
+}
+
+header input {
+    float: left;
+    border-right: none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    outline: #4caf50;
+}
+
+header button {
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    float: left;
+    border-left: none;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* main  */
+
+main {
+    padding-top: 60px;
+}
+
+section {
+    padding-top: 100px;
+    height: 105vh;
+    position: relative;
+    /* margin-top: 50px; */
+}
+
+.home {
+    padding-top: 100px;
+    top: 20px;
+    background-color: #4caf50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 85vh;
+}
+
+.hero-content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home .hero-heading {
+    font-size: 4rem;
+    margin: 20px;
+}
+
+.home .hero-subheading {
+    align-self: center;
+    font-size: 1rem;
+    font-family: Arial;
+    font-weight: 100;
+    margin: 10px;
+}
+
+.cta-button {
+    margin-top: 20px;
+}
+
+.cta-button a {
+    text-decoration: none;
+    background-color: white;
+    color: var(--btn-color);
+    padding: 12px;
+    border-radius: 25px;
+}
+
+.cta-button a:hover {
+    box-shadow: 2px 2px 5px 2px hsla(119, 56%, 84%, 0.485);
+    background-color: rgba(255, 255, 255, 0.878);
+}
+
+
+/* about section */
+
+#about {
+    margin: 10px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading,
+.subheading {
+    font-size: 2.2rem;
+    padding: 25px;
+}
+
+
+/* contact styles */
+
+.contact-content {
+    padding: 20px;
+    display: flex;
+}
+
+.col-left,
+.col-right {
+    width: 50%;
+}
+
+.col-right form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form input,
+form button,
+form textarea {
+    padding: 10px;
+    max-width: 350px;
+    margin: 10px;
+}
+
+form button {
+    background-color: var(--btn-color);
+    color: white;
+    width: 200px;
+    border-radius: 10px;
+}
+
+form textarea {
+    min-width: 350px;
+    min-height: 125px;
+}
+
+
+/* marquee h1 {
+    font-size: 4rem;
+    color: #4caf50;
+} */
+
+footer .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4caf50;
+    padding: 20px;
+    height: 10vh;
+    bottom: 0%;
+}
